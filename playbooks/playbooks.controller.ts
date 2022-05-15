@@ -407,13 +407,13 @@ export class PlaybooksController {
       }
 
       try {
-        // adding special provisions, wait till all provisions are added
+        // Adding special provisions, wait till all provisions are added
         await this.playbookService.addSpecialProvisions(
           playbookDetail,
           dps[0].masterTemplateDecisionPoints,
           queryRunner,
         );
-        // update dpCount depends on dps in special provisions
+        // Update dpCount depends on dps in special provisions
         await this.playbookService.updateTotalDpCountPlaybook(
           playbookDetail.id,
           queryRunner,
@@ -473,7 +473,7 @@ export class PlaybooksController {
         deleteSpecialDpBody.decisionPointIds,
         queryRunner,
       );
-      // update dpCount depends on dps in special provisions
+      // Update dpCount depends on dps in special provisions
       await this.playbookService.updateTotalDpCountPlaybook(
         deleteSpecialDpParam.playbookId,
         queryRunner,
