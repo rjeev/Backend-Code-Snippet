@@ -1,5 +1,6 @@
 import { MiddlewareConsumer, Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
+
 import { Playbook } from 'src/models/entities/Playbook.entity';
 import { PlaybooksController } from './playbooks.controller';
 import { PlaybooksService } from './playbooks.service';

@@ -1,6 +1,7 @@
 import { InjectConnection } from '@nestjs/typeorm';
-import { Playbook } from 'src/models/entities/Playbook.entity';
 import { EntityRepository, QueryRunner, Repository, Connection } from 'typeorm';
+
+import { Playbook } from 'src/models/entities/Playbook.entity';
 import { PlaybookStatusType } from './playbooks.interface';
 
 @EntityRepository(Playbook)

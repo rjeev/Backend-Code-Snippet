@@ -3,8 +3,9 @@ import {
   ValidatorConstraint,
   ValidatorConstraintInterface,
 } from 'class-validator';
-import PLAYBOOK_RESPONSE from '../playbook-response-message.constant';
 import { difference } from 'lodash';
+
+import PLAYBOOK_RESPONSE from '../playbook-response-message.constant';
 import { PLAYBOOK_VALID_STATUS_ARRAY } from 'src/common/constants';
 
 @Injectable()
